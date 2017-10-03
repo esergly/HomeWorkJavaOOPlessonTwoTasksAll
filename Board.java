@@ -6,11 +6,12 @@ public class Board {
 
     private Shape[] board = new Shape[4];
     private double sumArea = 0;
-
-    public Board(Shape[] board) {
-        super();
-        this.board = board;
-    }
+// конструктор с параметром в виде массива - не очень хорошо. 
+//Ведь его можно вызвать и с массивом из 100 элементов,а проверки на корректность размера массива в конструкторе у вас нет.
+    //public Board(Shape[] board) {
+    //    super();
+    //    this.board = board;
+    //}
 
     public Board() {
         super();
